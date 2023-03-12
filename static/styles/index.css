@@ -1,0 +1,81 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.wrapper {
+  margin: auto;
+  display: flex;
+}
+
+.construction-site {
+  display: flex;
+  margin: auto;
+  width: 90%;
+  font-size: calc(15px + 1vh);
+}
+
+.construction-site img {
+  max-width: 40%;
+  margin: auto;
+}
+
+.construction-site-text {
+  padding: 10px;
+  min-width: calc(60% - 20px);
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+
+.icon-link {
+  width: calc(33% - 2rem);
+  margin: 1.4rem 0;
+  display: block;
+  transition: all .2s ease-in-out;
+}
+
+.icon {
+  width: 100px;
+}
+
+.icon-link:hover {
+  width: 32%;
+  margin: 1rem;
+}
+
+.construction-site h1 {
+  margin-bottom: -6px;
+}
+
+.icons {
+  width: 100%;
+  height: 120%;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 700px) {
+  .construction-site {
+    flex-direction: column;
+    width: 90vw;
+  }
+
+  .construction-site img {
+    width: 100%;
+  }
+
+  .construction-site-text {
+    width: 100%
+  }
+}
